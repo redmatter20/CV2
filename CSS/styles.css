@@ -26,7 +26,10 @@ h3{
     color: #11999E;
 }
 p{
+    font-size: 1.25rem;
+    font-family: "Montserrat", sans-serif;
     display: block;
+    font-weight: 500;
 }
 
 a{
@@ -57,16 +60,24 @@ hr
     text-decoration: none;
 }
 
-.header
+/* #title
 {
-    background-color: #DD4A48;
+    background-color: #4F091D;
     width: 100%;
     height: 100px;
     position: relative;
+} */
+
+#title
+{
+    background-color: #4F091D;
+    color:white;
+    z-index: -1;
+    text-align: center;
 }
 .header-name
 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin: auto 50px auto 50px;
 }
 .buttonArea
@@ -89,7 +100,7 @@ hr
     text-align: center;
     font-size: large;
     font-weight: 1000;
-    color: #4F091D;
+    color: #DD4A48;
     text-decoration: none;
     padding-bottom: 5px;
     right: 1px;
@@ -100,7 +111,7 @@ hr
     background-color: #97BFB4;
     border-style: solid;
     border-width: 0px 0px 5px 0px;    
-    height: 1000px;
+    height: 100%;
     width: 100%;    
     padding:20px;
     padding-bottom: 00px;
@@ -113,7 +124,14 @@ hr
     background-position-y: 100%;
     background-size: 75%;
 }
+.topContainer.main-page
+{
+    background-color: #97BFB4;
+    border-style: solid;
+    border-width: 0px 0px 5px 0px;    
+    height: 1000px;
 
+}
 .gallery-container{
     width: 60%;
     margin: 2rem auto; 
@@ -227,12 +245,7 @@ hr
     grid-template-rows: repeat(8, 5vw);
     grid-gap: 15px;
 }
-.gallery_img
-{
-    width:100%;
-    height: 100%;
-    object-fit:cover;
-}
+
 
 .gallery_item--1
 {
@@ -252,6 +265,20 @@ hr
     grid-row-end: 3;
 }
 .gallery_item--3 {
+    background-image: url('/CSS\ -\ My\ Site/images/ColorFracture.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+.gallery_item--3:hover 
+{
+    background-image: url('/CSS\ -\ My\ Site/images/ColorFractureGameplay.gif');
+    background-size:cover;
+    background-repeat: no-repeat;
     margin: 0;
     grid-column-start: 7;
     grid-column-end: 9;
@@ -315,11 +342,18 @@ hr
     float:left;
 }
 
+.gallery_img
+{
+    margin: 2% 0;
+    width: 100%;
+}
+
 .gallery_img:hover
 {
     border-style: solid;
     border-width: 5px;
     border-color: #4F091D;
+    width: 101%;
 }
 
 .gameTitle
