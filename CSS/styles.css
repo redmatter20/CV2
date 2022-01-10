@@ -48,7 +48,8 @@ hr
     margin: 0px 40% 0px 40%;
     border-width: 10px;
     border-bottom: none;
-    border-color: #ede0bf;
+    border-color: #4F091D;
+    background:none;
 }
 
 .footer-link
@@ -93,19 +94,27 @@ hr
 {
 
 
-    width: 12%;
-    height: 20px;
-    display: inline-block;
+    border:none;
+    background:none;
     bottom:0px;
     text-align: center;
-    font-size: large;
+    font-size: 2rem;
     font-weight: 1000;
-    color: #DD4A48;
-    text-decoration: none;
+    color: #11999E;
+    
+    text-decoration:none;
     padding-bottom: 5px;
     right: 1px;
     position:relative;
 }
+.selected-button
+{
+    color:#DD4A48;
+    font-size: 2.5rem;
+    font-style: italic;
+    font-family: "Montserrat" sans-serif;
+}
+
 .topContainer
 {
     background-color: #97BFB4;
@@ -375,6 +384,18 @@ hr
 
 }
 
+.projects-list
+{
+    padding: 3% 10%;
+
+}
+
+.div-wrapper
+{
+    position:relative;
+
+}
+
 #mountain
 {
     display: inline-block;
@@ -409,5 +430,37 @@ hr
     float:left;
     margin: 10px 1% 5% 1%;
     position: absolute;
+}
+
+#video-game-projects-grid
+{
+    position: relative;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+
+}
+#video-game-projects-grid.fade{
+    opacity: 0;
+
+}
+
+#website-projects-grid
+{
+    position: relative;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+
+}
+#website-projects-grid.fade{
+    opacity: 0;
+
 }
 
