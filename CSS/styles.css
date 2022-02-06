@@ -13,8 +13,9 @@ h1
     font-family: 'Sacramento', cursive;
     display: block;
     top: 100px;
-    color: #069999;
+    color: white;
     line-height: 2;
+    text-shadow: 2px 2px 5px #000;
 }
 h2
 {
@@ -22,6 +23,7 @@ h2
     color: #069999;
     font-weight: normal;
 }
+
 
 p{
     font-size: 1.25rem;
@@ -144,7 +146,7 @@ hr
     background-position-y: 100%;
     background-size: 75%;
 }
-.topContainer.main-page
+.main-page
 {
     background-color: #97BFB4;
     border-style: solid;
@@ -182,6 +184,60 @@ hr
 .pro
 {
     text-decoration: underline;
+}
+
+.wrapper{
+    height: 100vh;
+    overflow-y:auto;
+    overflow-x: hidden;
+    perspective:10px;
+}
+
+header{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    z-index:-1;
+}
+
+.subtitle{
+    display:block;
+    position: absolute;
+    top:60%;
+    color:white;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.background-img, .foreground-img
+{
+    
+    position: absolute;
+    
+    object-fit: cover;
+    z-index: -1;
+}
+
+.background-img{
+    transform: translateZ(-10px)scale(2);
+    width: 110%;
+    height: 100%;
+}
+
+.foreground-img{
+    transform:translateZ(-5px)scale(1.5);
+    width:100%;
+    min-height: 100%;
+}
+
+#body{
+    background-color: #F5EEDC;
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
 }
 
 .topCloud
