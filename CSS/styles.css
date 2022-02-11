@@ -66,6 +66,19 @@ hr
     text-decoration: none;
 }
 
+.jumbotron
+{
+    
+    color:black;
+    padding: 2.5% 5% 1% 5%;
+
+}
+
+.jumbotron.jtitle{
+    /* font-size: 10rem; */
+    font-size:10vw;
+}
+
 /* #title
 {
     background-color: #4F091D;
@@ -545,6 +558,12 @@ header{
 .card-img
 {
     border-radius: 5px;
+}
+
+.jumbo-container
+{
+    height:800px;
+
 }
 
 #mountain
