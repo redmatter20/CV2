@@ -178,6 +178,12 @@ hr
     padding: 20px;
 }
 
+.portfolio-container
+{
+    padding:20px 20px 20px 20px;
+    margin: 100px 200px 100px 200px;
+}
+
 .bottomContainer
 {
     background-color:#4F091D;
